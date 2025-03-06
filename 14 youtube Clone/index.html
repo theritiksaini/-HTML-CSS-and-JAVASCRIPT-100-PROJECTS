@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Youtube clone</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <link rel="stylesheet" href="styles/genral.css" />
+        <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="styles/hero.css" />
+        <link rel="stylesheet" href="styles/shorts.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-main">
+                    <div class="left-side">
+                        <img
+                            class="img-tag"
+                            src="icons/hamburger-menu.svg"
+                            alt=""
+                        />
+                        <div class="logo-image">
+                            <img
+                                class="youtube-logo img-tag"
+                                src="icons/youtube-logo.svg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+
+                    <div class="middle-side">
+                        <input
+                            class="search-input"
+                            type="text"
+                            placeholder="Search"
+                        />
+                        <button class="search-icon-btn">
+                            <img
+                                class="search-icon-img img-tag"
+                                src="icons/search.svg"
+                                alt=""
+                            />
+                        </button>
+
+                        <button class="voice-search-icon-btn img-tag">
+                            <img
+                                class="voice-search-icon-img img-tag"
+                                src="icons/voice-search-icon.svg"
+                                alt=""
+                            />
+                        </button>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="create-btn">
+                            <div class="plus-sign">&#43;</div>
+                            <div class="create-txt">Create</div>
+                        </div>
+                        <img
+                            class="notifications-icon img-tag"
+                            src="icons/notifications.svg"
+                            alt=""
+                        />
+                        <img
+                            class="profile-pic img-tag"
+                            src="thumbnails/user.jpg"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section id="tags">
+            <div class="main-tags">
+                <ul>
+                    <li><a class="black-tag" href="#">All</a></li>
+                    <li><a class="a-tags" href="#">Music</a></li>
+                    <li><a class="a-tags" href="#">Podcasts</a></li>
+                    <li><a class="a-tags" href="#">Startup commpany</a></li>
+                    <li><a class="a-tags" href="#">Gaming</a></li>
+                    <li><a class="a-tags" href="#">Barbells</a></li>
+                    <li><a class="a-tags" href="#">Comedy clubs</a></li>
+                    <li><a class="a-tags" href="#">Stocks</a></li>
+                    <li>
+                        <a class="a-tags" href="#">Desktop computers</a>
+                    </li>
+                    <li><a class="a-tags" href="#">Web Development</a></li>
+                    <li><a class="a-tags" href="#">Display devices</a></li>
+                    <li><a class="a-tags" href="#">Colleges</a></li>
+                    <li><a class="a-tags" href="#">Indian pop music</a></li>
+                    <li><a class="a-tags a-blur" href="#">Weight</a></li>
+                    <div class="greater-than">&gt;</div>
+                </ul>
+            </div>
+        </section>
+
+        <!-- siebar -->
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img class="sidebar-img" src="icons/home.svg" alt="" />
+                    </a>
+                    <p>Home</p>
+                </li>
+                <li>
+                    <a href="#"
+                        ><img
+                            class="sidebar-img"
+                            src="icons/explore.svg"
+                            alt=""
+                    /></a>
+                    <p>shorts</p>
+                </li>
+                <li>
+                    <a href="#"
+                        ><img
+                            class="sidebar-img"
+                            src="icons/subscriptions.svg"
+                            alt=""
+                    /></a>
+                    <p>Subscriptions</p>
+                </li>
+                <li>
+                    <a href="#"
+                        ><img
+                            class="sidebar-img"
+                            src="icons/youtube-music.svg"
+                            alt=""
+                    /></a>
+                    <p>YouTube Music</p>
+                </li>
+                <li>
+                    <a href="#"
+                        ><img
+                            class="sidebar-img"
+                            src="icons/originals.svg"
+                            alt=""
+                    /></a>
+                    <p>Download</p>
+                </li>
+            </ul>
+        </div>
+
+        <section id="hero">
+            <div class="grid-container">
+                <div class="thumbnails-container">
+                    <div class="thumbnails-image">
+                        <img src="thumbnails/Channel-1.avif" alt="" />
+                    </div>
+
+                    <div class="thumnail-content">
+                        <div class="dp-img">
+                            <img src="/thumbnails/Channel-dp-1.jpg" alt="" />
+                        </div>
+
+                        <div class="content-text">
+                            <h3>You Are The World | By Sandeep Maheswari</h3>
+                            <p>
+                                Sandeep Maheswari
+                                <i class="fa fa-check-circle"></i>
+                            </p>
+                            <p>403k views &#46; 3 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="thumbnails-container">
+                    <div class="thumbnails-image">
+                        <img src="thumbnails/Channel-2.avif" alt="" />
+                    </div>
+
+                    <div class="thumnail-content">
+                        <div class="dp-img">
+                            <img src="/thumbnails/Channel-dp-2.jpg" alt="" />
+                        </div>
+
+                        <div class="content-text">
+                            <h3>
+                                'Burger Bae' के Demo से पहले आ गया Shark Aman के
+                                मुंह में पानी! | Shark Tank India S4 | Full
+                                Pitch
+                            </h3>
+                            <p>Sony LIV <i class="fa fa-check-circle"></i></p>
+                            <p>478K views &#46; 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="thumbnails-container">
+                    <div class="thumbnails-image">
+                        <img src="thumbnails/Channel-3.avif" alt="" />
+                    </div>
+
+                    <div class="thumnail-content">
+                        <div class="dp-img">
+                            <img src="/thumbnails/Channel-dp-3.jpg" alt="" />
+                        </div>
+
+                        <div class="content-text">
+                            <h3>
+                                7 Ways To Earn 30,000/day in 2025 (full guide)
+                            </h3>
+                            <p>
+                                Nishkarsh Sharma
+                                <i class="fa fa-check-circle"></i>
+                            </p>
+                            <p>1.3M views &#46; 4 months ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="thumbnails-container">
+                    <div class="thumbnails-image">
+                        <img src="thumbnails/Channel-4.avif" alt="" />
+                    </div>
+
+                    <div class="thumnail-content">
+                        <div class="dp-img">
+                            <img src="/thumbnails/Channel-dp-4.jpg" alt="" />
+                        </div>
+
+                        <div class="content-text">
+                            <h3>Craziest Scam of YouTube India</h3>
+                            <p>
+                                Mohak Manga <i class="fa fa-check-circle"></i>
+                            </p>
+                            <p>1.2M views &#46; 18 hours ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shorts Section -->
+        <section id="shorts">
+            <div class="shorts-container">
+                <div class="shorts-img">
+                    <img src="shorts/Shorts-1.avif" alt="" />
+                </div>
+                <div class="shorts-content">
+                    <h3 class="shorts-txt">
+                        Why Boring Businesses Make More Profit #shorts
+                    </h3>
+                    <p>6.2M Views</p>
+                    <!-- <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 128 512"
+                        class="svg-elipis"
+                    >
+                        <path
+                            d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"
+                        />
+                    </svg> -->
+                </div>
+            </div>
+
+            <div class="shorts-container">
+                <div class="shorts-img">
+                    <img src="shorts/Shorts-2.avif" alt="" />
+                </div>
+                <div class="shorts-content">
+                    <h3 class="shorts-txt">
+                        Charging Money for Hugs 🤣 The Signboard Prank
+                    </h3>
+                    <p>1.7M views</p>
+                    <!-- <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 128 512"
+                        class="svg-elipis"
+                    >
+                        <path
+                            d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"
+                        />
+                    </svg> -->
+                </div>
+            </div>
+
+            <div class="shorts-container">
+                <div class="shorts-img">
+                    <img src="shorts/Shorts-3.avif" alt="" />
+                </div>
+                <div class="shorts-content">
+                    <h3 class="shorts-txt">
+                        Home Owner #financewithsharan #shorts
+                    </h3>
+                    <p>15M views</p>
+                    <!-- <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 128 512"
+                        class="svg-elipis"
+                    >
+                        <path
+                            d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"
+                        />
+                    </svg> -->
+                </div>
+            </div>
+
+            <div class="shorts-container">
+                <div class="shorts-img">
+                    <img src="shorts/Shorts-4.avif" alt="" />
+                </div>
+                <div class="shorts-content">
+                    <h3 class="shorts-txt">
+                        Will 100 Sit-ups Every Day Get You a Sixpack?
+                    </h3>
+                    <p>74M views</p>
+                    <!-- <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 128 512"
+                        class="svg-elipis"
+                    >
+                        <path
+                            d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"
+                        />
+                    </svg> -->
+                </div>
+            </div>
+
+            <div class="shorts-container">
+                <div class="shorts-img">
+                    <img src="shorts/Shorts-5.avif" alt="" />
+                </div>
+                <div class="shorts-content">
+                    <h3 class="shorts-txt">It is perfect. #love #me</h3>
+                    <p>34M views</p>
+                    <!-- <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 128 512"
+                        class="svg-elipis"
+                    >
+                        <path
+                            d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"
+                        />
+                    </svg> -->
+                </div>
+            </div>
+
+            <div class="shorts-container">
+                <div class="shorts-img">
+                    <img src="shorts/Shorts-6.avif" alt="" />
+                </div>
+                <div class="shorts-content">
+                    <h3 class="shorts-txt">Reason.. #cricket #sg #shorts</h3>
+                    <p>8.1M views</p>
+                    <!-- <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 128 512"
+                        class="svg-elipis"
+                    >
+                        <path
+                            d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"
+                        />
+                    </svg> -->
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

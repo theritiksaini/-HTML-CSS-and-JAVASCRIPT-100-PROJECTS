@@ -1,0 +1,31 @@
+#shorts {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-left: 180px;
+}
+
+.shorts-container {
+    width: 250px;
+}
+
+.shorts-img img {
+    width: 100%;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.shorts-txt {
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+.shorts-content p {
+    color: rgb(113, 110, 110);
+    font-weight: 600;
+}
+/* .svg-elipis {
+    height: 24px;
+} */
