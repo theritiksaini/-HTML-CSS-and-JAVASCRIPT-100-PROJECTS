@@ -1,0 +1,64 @@
+/* Featured Content Section */
+.featured-content {
+    text-align: center;
+    background: #f4f8f7;
+    padding: 80px 20px;
+    /* border-top: 5px solid #4aa3df; Blue top border */
+    /* border-bottom: 5px solid #4aa3df; Blue bottom border */
+}
+
+/* Center the text and match width with image */
+.featured-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #4aa3df;
+    max-width: 260px;
+    margin: 0 auto;
+    padding-bottom: 16px;
+}
+
+.featured-content p {
+    font-size: 16px;
+    color: #555;
+    margin: 0 auto; /* Center horizontally */
+    max-width: 800px; /* Same width as the image */
+    line-height: 1.6;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+/* Image with Play Button */
+.featured-image {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.featured-image img {
+    width: 100%;
+    max-width: 992px;
+    border-radius: 8px;
+    /* border: 5px solid #4aa3df; Blue border around the image */
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 40px;
+    padding: 15px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.play-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
