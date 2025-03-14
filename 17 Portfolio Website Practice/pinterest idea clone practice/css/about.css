@@ -1,0 +1,86 @@
+/* About Section */
+
+section {
+    background-color: #000000;
+
+    /* background-image: url(/images/about-pic.png); */
+    height: 100vh;
+    background-size: cover;
+    background-position: right; /* Aligns the face to the left */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    overflow: hidden;
+}
+
+.background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(1.8);
+    padding-right: 15%;
+    /* object-position: left; Moves the face to the left */
+}
+
+.about-img-container {
+    position: fixed; /* Ensures it's on top of everything */
+    bottom: 0; /* Anchors it at the bottom */
+    left: 50%; /* Centers it horizontally */
+    /* transform: translateX(-50%); Centers it properly */
+    /* width: 100vw; Full width */
+    height: 100vh;
+    z-index: 1005; /* Super high z-index to be on top of everything */
+    pointer-events: none; /* Prevents it from blocking interactions */
+}
+
+.about-section {
+    margin: 0 10%;
+    width: 90%;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    position: relative;
+    height: 90vh;
+    max-width: 500px;
+    text-align: left;
+}
+
+.about-content h2 {
+    font-size: 42px;
+    display: inline-block;
+    border-bottom: 3px solid #00bcd4;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.location::before,
+.location::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #00afc1;
+}
+
+@media (max-width: 1000px) {
+    .description {
+        z-index: 1006;
+        width: 300px;
+        margin-top: -200px;
+    }
+    .about-img-container {
+        min-width: 480px;
+    }
+}

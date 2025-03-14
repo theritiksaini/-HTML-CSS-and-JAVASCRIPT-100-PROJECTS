@@ -1,0 +1,38 @@
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: -5px;
+    margin-bottom: 30px;
+}
+
+.education-container {
+    margin-top: -40px;
+}
+
+.experience-description {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 12px;
+}
+
+.year {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #00bcd4;
+    background-color: #00bcd4;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+hr {
+    position: absolute;
+    height: 70px;
+    top: 60px;
+}
