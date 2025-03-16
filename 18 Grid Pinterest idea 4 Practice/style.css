@@ -1,0 +1,416 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    border: 2px solid rgb(209, 206, 206);
+    box-shadow: 1px 2px 5px rgba(141, 140, 140, 0.3);
+    border-radius: 28px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Style the logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Center Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #888;
+}
+
+/* Right-side icons */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Search Box */
+.search-container {
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 8px 15px;
+    border-radius: 28px;
+    border: 1px solid #ccc;
+}
+
+.search-container i {
+    color: #777;
+    margin-right: 10px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    width: 120px;
+}
+
+/* Icon Styling */
+.icon {
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+}
+
+/* Shopping Bag Notification Badge */
+.cart-icon {
+    position: relative;
+}
+
+.cart-icon .badge {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero Section */
+.hero {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        "hero-text hero-text hero-img-container hero-img-container"
+        "hero-text hero-text hero-img-container hero-img-container"
+        "black-hat green-hat hero-img-container hero-img-container";
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Assign correct grid areas */
+.hero-text {
+    grid-area: hero-text;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 1.2;
+    background-color: #d9d9d9;
+    padding: 40px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60vh;
+}
+
+.hero-heading {
+    font-size: 3.6rem;
+}
+
+.arrow {
+    display: inline-block;
+    position: relative;
+    margin-left: 15px;
+}
+
+.arrow::before {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: -14px;
+    left: 0;
+}
+
+.arrow::after {
+    content: "→";
+    font-size: 2rem;
+    position: absolute;
+    right: -145px;
+    top: -35px;
+}
+
+.hero-text .description {
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: lowercase;
+    width: 70%;
+}
+
+/* Hero Images */
+.hero-img-container {
+    grid-area: hero-img-container;
+}
+
+.black-hat {
+    grid-area: black-hat;
+}
+
+.green-hat {
+    grid-area: green-hat;
+}
+
+/* Image Container Styling */
+.img-container img,
+.hero-img img {
+    max-width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.black-hat .img-container,
+.green-hat .img-container {
+    border-radius: 12px;
+    /* padding: 10px; */
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.black-hat .img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.black-hat .img-container {
+    background-color: #b2b2b2;
+}
+
+.green-hat .img-container {
+    background-color: #56665f;
+}
+
+.black-hat,
+.green-hat {
+    position: relative;
+}
+
+.tag {
+    position: absolute;
+    z-index: 5;
+    bottom: 20px;
+    left: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.hero-img-container img {
+    height: 105vh;
+}
+
+.hero-img-container {
+    position: relative;
+}
+
+.hero-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-btn {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 58%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border: 2px solid #aea188;
+    background-color: #aea1881a;
+    border-radius: 50%;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* Space between buttons */
+    /* margin-top: 1rem; */
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-1,
+.btn-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 180px;
+    /* Fixed width for alignment */
+}
+
+.btn-2 {
+    background-color: transparent;
+    color: white;
+}
+
+.btn-1 {
+    padding-left: 20px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.btn-2 {
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.btn-2::after {
+    content: "✉"; /* Envelope Icon */
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+}
+
+.btn-1:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn-2:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-1:hover::after {
+    background-color: white;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero {
+        grid-template-areas:
+            "hero-text"
+            "hero-img-container"
+            "black-hat"
+            "green-hat";
+        text-align: center;
+    }
+
+    .hero-text {
+        font-size: 2.5rem;
+        padding: 30px;
+        height: auto;
+    }
+
+    .hero p {
+        margin: 10px 0;
+    }
+
+    .hero-text .description {
+        width: 100%;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-icons {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin: 20px 0;
+    }
+
+    .search-container input {
+        width: 100px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .hero-text {
+        font-size: 2rem;
+        padding: 20px;
+    }
+
+    .hero p {
+        margin: 5px 0;
+    }
+
+    .img-container img {
+        max-height: 300px;
+    }
+}
